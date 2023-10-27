@@ -1,32 +1,117 @@
 @font-face {
     font-family: "titillium-web";
-    src: url(../fonts/Titillium_Web/TitilliumWeb-Regular.ttf) format('truetype');
+    src: url(../fonts/TitilliumWeb-Regular.ttf) format('truetype');
 }
 html {
-    font-family: "titillium-web", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "titillium-web"
+}
+body {
+    background-image: url(../images/bg.png);
 }
 .container {
     width: 60%;
-    margin: auto
+    margin: auto;
+    background-color: #d6cc99;
+    padding-bottom: 1rem;
+    border: 2px;
+    border-style: solid solid solid solid;
 }
 header  {
-    background-color: chartreuse;
+    background-color: #445D48;
+    display: flex;
+    text-wrap: wrap;
+    width: ;
+}
+header img {
+    box-sizing: border-box;
+    max-height: 3rem;
+    justify-self: flex-start;
+}
+header h1 {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    font-size: 1.9rem;
+    margin: 0;
+    white-space: nowrap;
+}
+header nav {
+    width: 40%;
+    margin-left: auto;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+}
+li {
+    width: calc(100% / 3);
+}
+li.active a {
+    background-color: #d6cc99;
+    color: #001524;
+    width: 100%;
+    height: 3rem;
+    display:block;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
-li>a {
+li a {
+    background-color: #445D48;
+    color: #fde5d4;
+    width: 100%;
+    height: 3rem;
+    display:inline-block;
+    text-align: center;
+    line-height: 3rem;
     text-decoration: none;
+    border: 2px;
+
 }
-li>a:hover {
-    background-color: green;
+
+li a:hover {
+    background-color: #001524;
+    color: #fde5d4;
 }
-li>a:hover::before{
-    content: '<< ';
-}
-li>a:hover::after {
-    content: ' >>'
-}
+
 main {
-    background-color: darkgrey;
+    margin: 2rem 1rem 1rem 1rem;
+    width: auto;
+    padding-top: 9rem;
+    background-color: #fde5d4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+}
+main h1 {
+    width: 100%;
+    color:#001524;
+    text-align: center;
+    margin: auto;
+    font-size: 400%;
+}
+main img {
+    width: 200%;
+    max-width: 40rem;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 2px;
+}
+main article {
+    max-width: 40rem;
+    color:#001524;
+    margin: auto;
+    padding: 1rem;
 }
 
 footer {
