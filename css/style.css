@@ -1,6 +1,7 @@
 @font-face {
     font-family: "titillium-web";
     src: url(../fonts/TitilliumWeb-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 html {
@@ -8,11 +9,16 @@ html {
 }
 
 body {
-    background-image: url(../images/bg.png);
+    background-image: url(../images/bg.avif);
+}
+
+.sr-only {
+    display: none;
 }
 
 .container {
-    width: 60%;
+    max-width: 80rem;
+    width: 100%;
     margin: auto;
     background-color: #d6cc99;
     padding-bottom: 1rem;
@@ -26,9 +32,13 @@ header {
     text-wrap: wrap;
 }
 
+img main {
+    width: 100%;
+    height: auto;
+}
+
 header img {
     box-sizing: border-box;
-    max-height: 3rem;
     justify-self: flex-start;
 }
 
@@ -37,12 +47,12 @@ header h1 {
     padding-left: 1rem;
     font-size: 0.1px;
     display: none;
-     margin: 0;
+    margin: 0;
     white-space: nowrap;
 }
 
 header nav {
-    width: 40%;
+    width: 100%;
     margin-left: auto;
 }
 
@@ -91,16 +101,12 @@ li a:hover {
 }
 
 main {
-    margin: 2rem 1rem 1rem 1rem;
     width: auto;
-    padding-top: 9rem;
     background-color: #fde5d4;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 1px;
 }
 
 main h2 {
@@ -109,16 +115,42 @@ main h2 {
     text-align: center;
     margin: auto;
     font-size: 400%;
+    padding-top: 9rem;
+    color: #001524;
+}
+
+.projects>h2 {
+    width: 100%;
+    max-width: 40rem;
+    text-align: start;
+    padding-top: 1rem;
+    color: #001524;
+    align-self: flex-start;
+}
+
+.projects>img {
+    box-sizing: border-box;
+    margin: 0 1rem 0 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.projects>p {
+    color: #001524;
+    padding: 0;
+    max-width: 40rem;
+    text-align: center;
 }
 
 main>img {
-    width: 200%;
+    width: 100%;
+    height: auto;
     max-width: 40rem;
-    margin: 1rem 1rem 0 1rem;
-    border-radius: 1rem;
+    margin: 2rem 1rem 1rem 1rem;
     border-style: solid;
     border-width: 2px;
 }
+
 
 main>article {
     max-width: 40rem;
@@ -129,23 +161,24 @@ main>article {
 
 section {
     max-width: 40rem;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 section>article {
-    max-width: 32%;
+    width: 100%;
     background-color: #d6cc99;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: top;
+    align-items: center;
     border-style: solid;
     border-width: 1px;
-    border-radius: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 article>h3 {
@@ -154,11 +187,21 @@ article>h3 {
     box-sizing: border-box;
     min-height: 3rem;
     border-width: 1px;
+    color: #001524;
 
+}
+
+article figure {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #001524;
 }
 
 article img {
     max-height: 150px;
+    width: auto;
+
 }
 
 article p {
@@ -168,8 +211,9 @@ article p {
     text-align: center;
     padding: 0 1rem 1rem 1rem;
 }
+
 article p strong {
-    color:#d6cc99;
+    color: #d6cc99;
     background-color: #001524;
 }
 
@@ -194,6 +238,46 @@ article.clickable:hover figcaption {
     color: #d6cc99;
 }
 
-footer {
-    background-color: gray;
+.contact {
+    display: flex;
+    padding: 9rem 1rem 9rem 1rem;
+    justify-content: space;
+    flex-wrap: wrap;
+    color: #001524;
+}
+
+.contact h3 {
+    width: 100%;
+}
+.contact address {
+    width: 100%;
+}
+.contact iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 60%;
+    }
+
+    section>article {
+        max-width: 32%;
+    }
+
+    header nav {
+        width: 40%;
+    }
+
+    main {
+        margin: 2rem 1rem 1rem 1rem;
+        border-style: solid;
+        border-width: 1px;
+    }
+    .contact address {
+        width: 50%;
+    }
+    .contact iframe {
+        width: 50%;
+    }
 }

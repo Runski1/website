@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matias Ruonala's website portfolio - Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects page of Matias Ruonala's web portfolio written by hand for university's HTML/CSS-assignment">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link href="../css/style.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <header>
-            <img src="/images/narrow_logo.png" alt="My face as a vector drawn logo">
+            <img src="/images/narrow_logo255x72.png" alt="My face made into a logo" height="48" width="170">
             <h1>M. Ruonala</h1>
             <nav>
                 <ul>
@@ -24,13 +24,18 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="projects">
+            <h2>My projects</h2>
+            <img src="../images/planning.jpg" alt="Stock photo of a man planning something" width="640" height="229">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur, cupiditate voluptatem ipsam
+                labore consectetur ut maiores illum natus, hic, omnis voluptas aperiam delectus laudantium explicabo
+                obcaecati eveniet voluptatum nisi.</p>
             <section>
-                <h2>My projects</h2>
+                <h3 class="sr-only">Here are subcategories of my projects</h3>
                 <article class="clickable">
                     <h3>Python</h3>
                     <figure>
-                        <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png"
+                        <img src="../images/python-logo-only-downscaled.png" width="269" height="326"
                             alt="Python-logo">
                         <figcaption>I'm bending the rules of the assignment a bit</figcaption>
                     </figure>
@@ -45,13 +50,14 @@
                 <article class="clickable">
                     <h3>HTML and CSS</h3>
                     <figure>
-                        <img src="../images/html-154434_640.png"
+                        <img src="../images/html-downscaled.png" width="434" height="640"
                             alt="Open source artist's illustration of HTML-document.">
                         <figcaption>So these figcaptions don't make too much sense.</figcaption>
                     </figure>
                     <p>
                         Man, I just love writing HTML and CSS by hand. I dont even need multiple projects for
-                        repetition! By the way, <strong>Try clicking</strong> any of these projects. It won't do anything (yet) but it's
+                        repetition! By the way, <strong>Try clicking</strong> any of these projects. It won't do
+                        anything (yet) but it's
                         cool.
                     </p>
                 </article>
@@ -60,7 +66,7 @@
                 <article class="clickable">
                     <h3>Digital image manipulating</h3>
                     <figure>
-                        <img src="../images/swear-logo.png"
+                        <img src="../images/swear-logo_downscaled90x150.png" width="477" height="794"
                             alt="Vector drawing of my face where my mouth is covered with @-symbol.">
                         <figcaption>Vector drawing of my face</figcaption>
                     </figure>
