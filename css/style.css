@@ -255,6 +255,25 @@ article.clickable:hover figcaption {
 .contact iframe {
     width: 100%;
 }
+address>img {
+    width: 10%;
+    height: auto;
+    display: inline;
+}
+#github {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-content: center;
+}
+#github>img {
+    height: 100%;
+    width: auto;
+}
+#github a {
+    align-self: center;
+}
 
 @media screen and (min-width: 769px) {
     .container {
